@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Categorie;
 
-class DatabaseSeeder extends Seeder
+
+class CategoriesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(CategoriesSeeder::class);
+        Categorie::create(['name' => 'Cars', 'showhidle' => 'show']);
+       
+        //
     }
 }
