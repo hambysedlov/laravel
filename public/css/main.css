@@ -57,7 +57,9 @@
 	}
 
 /* Containers */
-
+	.maintext{
+	color:black;
+	}
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -1844,7 +1846,10 @@
 			top: 0;
 			width: 2.25em;
 		}
-
+		
+		.maintext{
+		color:black;
+		}
 			.icon.circle:hover {
 				top: -0.2em;
 			}
@@ -3121,6 +3126,7 @@
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
+				
 			}
 
 				#banner .inner {
@@ -3192,5 +3198,6 @@
 				width: 50px;
 				height: 34px;
 			}
+			
 
 	}
