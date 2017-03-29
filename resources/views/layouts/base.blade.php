@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
 		
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -21,12 +21,15 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="#">CAR<span> is your life</span></a></h1>
+				
+					<h1 id="logo"><a href="{{ url('/') }}">CAR<span> is your life</span></a></h1>
 					<nav id="nav">
+					
+					
 						<ul>
 							@section('menu')
 <li class="submenu">
-								<a href="#">Меню</a>
+								<a href="#">ВАШ ВЫБОР</a>
 								<ul>
 								@foreach($catalogs as $one)
 									<li><a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a></li>
@@ -46,14 +49,48 @@
 							</li>
 							@show
 							
-							
-							<li><a href="{{ route('login') }}" class="button special">Войти</a></li>
-							
-						 
-						</ul>
+						
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    
+									<li>
+                                        <a href="{{ url('/home') }}"
+                                          >
+                                            Home
+                                        </a>
+
+                                    
+                                    </li>
+									<li>
+                                        <a href="{{ url('/logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
+                    </ul>
+						
 					</nav>
+					
 				</header>
 @yield('content')
+
 
 			<!-- Footer -->
 				<footer id="footer">

@@ -11,4 +11,8 @@ class ProductsController extends Controller
 	$catalog = Catalogs::Where('showhide','show')->Where('id',$id)->first();
 	return view('catalog')->with('catalog',$catalog);
 	}
+	public function getProduct($id = 0){
+	$products = Products::Where('showhide','show')->Where('catalog_id',$id)->first();
+	return view('products')->with('product',$products);}
+	
 }
