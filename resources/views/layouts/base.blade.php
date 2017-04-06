@@ -28,14 +28,14 @@
 					
 						<ul>
 							@section('menu')
-<li class="submenu">
+							<li class="submenu">
 								<a href="#">ВАШ ВЫБОР</a>
 								<ul>
 								@foreach($catalogs as $one)
 									<li><a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a></li>
 									@endforeach
 									
-									<li class="submenu">
+									<!--<li class="submenu">
 										<a href="#">Submenu</a>
 										<ul>
 											<li><a href="#">Dolore Sed</a></li>
@@ -44,7 +44,7 @@
 											<li><a href="#">Sed Magna</a></li>
 											<li><a href="#">Ipsum Nisl</a></li>
 										</ul>
-									</li>
+									</li>-->
 								</ul>
 							</li>
 							@show
@@ -92,23 +92,26 @@
 @yield('content')
 
 
-			<!-- Footer -->
+		<!-- Footer -->
+			<section id="banner">
 				<footer id="footer">
 
+
 					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://twitter.com/" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com/" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com/" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://vk.com/" class="icon circle fa-vk"><span class="label">Vk</span></a></li>
 					</ul>
 
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
+				
 				</footer>
-
+			</section>
 		</div>
 
 		<!-- Scripts -->
