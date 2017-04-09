@@ -10,8 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}" />
+		<link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}" />
 		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
 		
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -93,20 +95,20 @@
 
 
 		<!-- Footer -->
-			<section id="banner">
+			<section id="banner-bottom">
 				<footer id="footer">
 
 
 					<ul class="icons">
-						<li><a href="https://twitter.com/" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://facebook.com/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://plus.google.com/" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="https://github.com/" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://vk.com/" class="icon circle fa-vk"><span class="label">Vk</span></a></li>
+						<li><a href="https://twitter.com/" target="_blank" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://facebook.com/" target="_blank" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com/" target="_blank" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com/" target="_blank" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://vk.com/" target="_blank" class="icon circle fa-vk"><span class="label">Vk</span></a></li>
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; BSUIR 2017</li><li>Design: <a href="#">MyDesign</a></li>
 					</ul>
 
 				
@@ -115,7 +117,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
+			
 			<script src="js/jquery.dropotron.min.js"></script>
 			<script src="js/jquery.scrolly.min.js"></script>
 			<script src="js/jquery.scrollgress.min.js"></script>
