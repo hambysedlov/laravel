@@ -55,6 +55,13 @@
 				noOpenerFade: true,
 				expandMode: (skel.vars.touch ? 'click' : 'hover')
 			});
+			
+$('#call').click(function(){
+    $('.pop-up').css('display','block');
+    $('.pop-up-container').css('display','block');
+});
+                      });
+
 
 		// Off-Canvas Navigation.
 
@@ -115,4 +122,12 @@
 
 	});
 
-})(jQuery);
+})(jQuery);           
+
+        
+    
+
+          
+
+   
+    

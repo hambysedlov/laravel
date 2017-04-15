@@ -5,6 +5,32 @@
 @stop
 @section('content')
 
+<script type="text/javascript">            
+$(document).ready(function(){ 
+$('#call').click(function(){
+    $('.pop-up').css('display','block');
+    $('.pop-up-container').css('display','block');
+});
+                      });
+        
+    </script>
+
+<script type="text/javascript">            
+$(document).ready(function(){ 
+$('.close-pop-up').click(function(){
+    $('.pop-up').css('display','none');
+    $('.pop-up-container').css('display','none');
+});
+                      });
+        
+    </script>
+	<script type="text/javascript">
+        $.jMaskGlobals = {translation: {
+                'n': {pattern: /\d/},
+            }
+        };
+        $('.phone-mask').mask('+380nn-nnn-nnnn').val('+380');
+    </script>
 			<!-- Banner -->
 				<section id="banner">
 
@@ -22,7 +48,7 @@
 						<div class="instructions">
 							<h3>Как взять авто в аренду?</h3>
 							<ul>
-								<li><i class="fa fa-phone"></i> <span>Звонок и/или встреча в офисе</span></li>
+								<li><i class="fa fa-phone"></i> <span><a href="javascript:void(0);"  id="call">Звонок</a> и/или встреча в офисе</span></li>
 								<li><i class="fa fa-desktop"></i> <span>Выбор авто по каталогу, осмотр на стоянке</span></li>
 								<li><i class="fa fa-file-text-o"></i> <span>Заключение договора аренды и передача автомобиля клиенту</span></li>
 							</ul>
@@ -108,7 +134,21 @@
 							</footer>
 
 						</section>
-
+<div class="pop-up"> 
+	<span>Закажите звонок</span>	
+	<p>
+<input type="text" name="phone" placeholder="+37544">
+		</p>
+	<p>
+<input type="submit"  value="Отправить" style="margin: 0 auto;
+    display: block;">
+		</p>
+		<div class="close-pop-up">
+		&times;
+					</div>
+</div>
+	<div class="pop-up-container">
+			</div>
 				</article>
 				
 @endsection
