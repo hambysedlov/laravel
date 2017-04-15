@@ -14,7 +14,8 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-     View::composer('layouts.base', 'App\Providers\ViewComposers\BaseComposer');   
+        View::composer('layouts.base', 'App\Providers\ViewComposers\BaseComposer');
+        View::composer('common_header', 'App\Providers\ViewComposers\BaseComposer');
     }
 
     /**

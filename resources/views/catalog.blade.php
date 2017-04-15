@@ -6,52 +6,83 @@
 @section('content')
 
 			<!-- Banner -->
-			<header class="special container">
-			</header>
 
+			<section id="banner" class="catalog">
+
+			</section>
+			
 			<!-- Main -->
-			<div id="page-wrapper">
-				<article id="main">
-				<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<h2>Лучшие наши<strong>машины</strong>, собраны тут для вас
-						<br />
-						</h2>
-						<p>Откройте для себя <strong>наши машины</strong> лучшее в своем деле для вашего удобства
-						<br />
-					От вас ничего не требуется, вы выбираете ее, мы отдаем ее вам
-						<br />
-						
-					</header>
-					<header id="header" class="alt">
-				<h1 id="logo"><a href="{{ url('/') }}">CAR<span> is your life</span></a></h1>
-					<nav id="nav">
-				</nav></header>
-				@foreach($products as $one)
-<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="4u 12u(narrower)">
-									<section>
-										<span class=""><img src="{{asset('uploads/'.$one->image)}}" style="width:200px;"></span>
-										<header>
-											<h3>{{$one->name}}</h3>
-										</header>
-										<p style="">{{$one->price}}</p>
-										<p>{!!$one->description!!}</p>
-									</section>
+										
+					<section id="catalog" class="wrapper style3 container special">
+						<header class="major">						
+
+						<h2>{{$catalog->name}}</h2>
+						<i class="fa fa-car 8x"></i>
+						<p>{!!$catalog->description!!}</p>
+						</header>
+
+							<div class="row sheet">
+							@foreach($products as $one)
+								<div class="col-md-4">
+								<div class="element">
+									<span>
+										<img src="{{asset('uploads/'.$one->image)}}" style="">
+									</span>
+									<header>
+										<h3>{{$one->name}}</h3>
+									</header>
+									<span class="price"><p>{{$one->price}}</p></span>
+
+										<table class="table">
+											<tbody>
+												<tr>
+													<td>Год выпуска</td>
+													<td>{{$one->year_of_issue}}</td>
+												</tr>
+												<tr>
+													<td>Тип топлива</td>
+													<td>{{$one->fuel_type}}</td>
+												</tr>
+												<tr>
+													<td>Объём двигателя</td>
+													<td>{{$one->engine_capacity}}</td>
+												</tr>
+												<tr>
+													<td>Цвет</td>
+													<td>{{$one->color}}</td>
+												</tr>
+												<tr>
+													<td>Трансмиссия</td>
+													<td>{{$one->transmission}}</td>
+												</tr>
+												<tr>
+													<td>Тип кузова</td>
+													<td>{{$one->body_type}}</td>
+												</tr>
+												<tr>
+													<td>Расход топлива</td>
+													<td>{{$one->fuel_consumption}}</td>
+												</tr>
+												<tr>
+													<td>Марка</td> 
+													<td>{{$one->brand}}</td>
+												</tr>
+												<tr>
+													<td>Опции</td>
+													<td>{{$one->options}}</td>
+												</tr>
+											</tbody>
+										</table>
+												<ul class="buttons">
+													<li><a href="#" class="button rent"><div class="text">Арендовать</div></a></li>
+												</ul>
+										</div>
 
 								</div>
-								</section>
-																
-							</div>
-						</section>
+
+								@endforeach
+							</div>							
+					</section>					
 						
-					@endforeach
-					</div>
-					
-				</article>
-</div>
-			<!-- CTA -->
-				
 				
 @endsection

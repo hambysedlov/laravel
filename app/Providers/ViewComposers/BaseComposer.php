@@ -6,8 +6,5 @@ class BaseComposer{
 	public function compose(View $view){
 		$catalogs = Catalogs::Where('showhide' , 'show')->get();
 		$view->with('catalogs' , $catalogs);
-		
 	}
-	
-	
 }

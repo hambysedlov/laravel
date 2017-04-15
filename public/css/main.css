@@ -484,9 +484,17 @@
 
 	@media screen and (max-width: 1680px) {
 
+/*		.row.sheet > * {
+			padding: 10px 20px 10px 20px;
+		}*/
+
 		.row > * {
 			padding: 40px 0 0 40px;
 		}
+
+/*		.row.sheet {
+			margin: 0;
+		}*/
 
 		.row {
 			margin: -40px 0 -1px -40px;
@@ -2117,7 +2125,7 @@
 
 	.wrapper {
 		margin-bottom: 5em;
-		padding: 5em;
+		padding: 4em;
 	}
 
 		.wrapper.style1 {
@@ -2203,7 +2211,7 @@
 
 	#header {
 		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
 		color: inherit;
 		cursor: default;
 		font-size: 0.8em;
@@ -2308,6 +2316,16 @@
 			position: absolute;
 		}
 
+			#header.catalog.reveal {
+				padding: 1em 1.5em;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+			}
+
+			#header.alt.catalog.reveal nav {
+				right: 1.5em;
+				top: 0.75em;
+			}
+
 			#header.alt nav {
 				right: 2.5em;
 				top: 1.75em;
@@ -2327,6 +2345,8 @@
 		padding: 1em 0;
 		text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
+		box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+
 	}
 
 		.dropotron.level-0 {
@@ -2422,6 +2442,14 @@
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
+	}
+
+	#banner.catalog {
+		padding: 28px 0;
+		box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.15);
+		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: top left, top center;
+		background-repeat: repeat, no-repeat;
 	}
 
 		#banner .inner {
@@ -2553,6 +2581,55 @@
 	#advantages .button .text:hover{
 		color: #96dad1;
 	}
+
+
+
+/*Catalog*/
+
+	#catalog.container p {
+		margin: 10px 110px;
+	}
+
+	#catalog.container .price p {
+		background-color: #96dad1;
+		color: white;
+	}
+
+	#catalog.container .table {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		text-align: left;
+	}
+
+	#catalog .row img {
+		width: 200px;
+		margin-top: 1em;
+	}
+
+	#catalog .fa {
+		color: #96dad1;
+		font-size: 40px;
+	}
+
+	#catalog .sheet .element {
+		padding: 10px 20px 40px 20px;
+		box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.15);
+	}
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	.button.rent {
+		border: solid 1px;
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 2px;
+		min-width: 13em;
+		padding: 0 0.75em;
+		line-height: 3em;
+	}
+
 
 
 /* CTA */
@@ -3119,7 +3196,7 @@
 					}
 
 				header p {
-					text-align: center;
+					text-align: justify;
 				}
 
 			footer.major {
@@ -3212,6 +3289,7 @@
 					#banner .inner br {
 						display: none;
 					}
+
 
 		/* Main */
 
