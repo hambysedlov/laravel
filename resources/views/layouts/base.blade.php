@@ -12,10 +12,9 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}" />
 		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
-		<script src="{{asset('js/jquery.min.js')}}"></script>
+		<script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
 		<script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="jquery.mask.js"></script>
+    	<script type="text/javascript" src="{{asset('js/jquery.mask.min.js')}}"></script>
 		
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
