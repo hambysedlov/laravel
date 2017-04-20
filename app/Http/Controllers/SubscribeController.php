@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//use App\Subscribe;
+use App\Subscribe;
 use Auth;
 class SubscribeController extends Controller
 {
