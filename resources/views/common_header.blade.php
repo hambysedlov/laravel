@@ -5,18 +5,27 @@
 	
 	
 		<ul>
+		
 			@section('menu')
 			<li class="submenu">
+			
 				<a href="#">ВАШ ВЫБОР</a>
+				
 				<ul>
-				@foreach($catalogs as $one)
-					<li><a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a></li>
+				<form class="" method="post" action="subscribe">
+				{!!csrf_field()!!}
+				@foreach($catalogs as $one)<li>
+					<input name="{{$one->id}}" value="{{$one->id}}" type="checkbox"><a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a></li>
 					@endforeach
-				</ul>
+			<input type="submit" name="send" value="Подписаться">
+			</form>	</ul>
+				
+				
+				
 			</li>
+		
 			@show
 			
-		
         <!-- Authentication Links -->
         @if (Auth::guest())
             <li><a href="{{ url('/login') }}">Login</a></li>

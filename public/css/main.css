@@ -2336,12 +2336,13 @@
 						margin-right: 0.65em;
 					}
 
-				#header nav ul li.active > a, #header nav ul li:hover > a {
+				#header nav ul li.active > a, #header nav ul form li:hover > a {
 					-moz-transition: all 0.2s ease-in-out;
 					-webkit-transition: all 0.2s ease-in-out;
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					background: rgba(188, 202, 206, 0.15);
+					
 				}
 
 				#header nav ul li.current > a {

@@ -17,6 +17,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/catalog/{id}', 'ProductsController@getCatalog');
-
+Route::post('subscribe', 'SubscribeController@postIndex');
 
 
