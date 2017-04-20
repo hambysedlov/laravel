@@ -5,197 +5,116 @@
 @stop
 @section('content')
 
-			<!-- Banner -->
-				<section id="banner">
+<!-- Banner -->
+<section id="banner">
 
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
-					<div class="inner">
+	<!--
+		".inner" is set up as an inline-block so it automatically expands
+		in both directions to fit whatever's inside it. This means it won't
+		automatically wrap lines, so be sure to use line breaks where
+		appropriate (<br />).
+	-->
+	<div class="inner">
+		<header>
+			<h2>CARS for You</h2>
+		</header>
 
-						<header>
-							<h2>CARS for Your</h2>
-						</header>
-						<p>Эти<strong> Машины</strong>, созданы специально для вас
-						
-						<br />
-						Команда <a href="http://html5up.net">Машин</a>.</p>
-						<footer>
-							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">Узнайте о нас больше</a></li>
-							</ul>
-						</footer>
+		<div class="instructions">
+			<h3>Как взять авто в аренду?</h3>
+			<ul>
+				<li><i class="fa fa-phone"></i> <span><a href="javascript:void(0);"  id="call">Звонок</a> и/или встреча в офисе</span></li>
+				<li><i class="fa fa-desktop"></i> <span>Выбор авто по каталогу, осмотр на стоянке</span></li>
+				<li><i class="fa fa-file-text-o"></i> <span>Заключение договора аренды и передача автомобиля клиенту</span></li>
+			</ul>
+		</div>
+		
+		<footer>
+			<ul class="buttons vertical">
+				<li><a href="#main" class="button fit scrolly">Выбрать автомобиль</a></li>
+			</ul>
+		</footer>
+	</div>
+</section>
 
-					</div>
+<!-- Main -->
 
-				</section>
+<section id="advantages" class="wrapper style3 container special">
+	<header class="major">
+		<h2><strong>Преимущества </strong>работы с нами</h2>
+	</header>
 
-			<!-- Main -->
-				<article id="main">
+	<div class="row special-row">
+		<div class="col-xs-6 col-md-4">
+			<i class="fa fa-clock-o fa-8x" aria-hidden="true"></i>
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<section>
+				<header>
+					<h3>Комфорт и оперативность</h3>
+				</header>
+				<p>Нужно встретить родственников и друзей в аэропорту? Ожидаете прибытия важных партнеров или потенциальных клиентов? Важно не терять мобильности, даже не имея возможности пользоваться собственным транспортом? Встретим, доставим и разместим любое количество пассажиров — прокат машин в Минске для путешествий с максимальным комфортом</p>
+			</section>
+		</div>
+	</div>
 
-					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<h2>Каждый день это движение<strong>, движение это жизнь</strong>, и мы поможем вам с вашим движением
-						<br />
-						Вы доверяете нам, мы доверяем вам.</h2>
-						<p>Откройте для себя <strong>наши машины</strong> лучшее в своем деле для вашего удобства
-						<br />
-					От вас ничего не требуется, вы выбираете ее, мы отдаем ее вам
-						<br />
-						
-					</header>
+	<div class="row special-row">
+		<div class="col-xs-12 col-md-8">
+			<section>
+				<header>
+					<h3>Лучшие цены</h3>
+				</header>
+				<p>Аренда машин становится доступнее — мы подберем подходящий автомобиль, вне зависимости от сложности поставленной задачи. Доступны и недорогие, и роскошные модели — каждый клиент сам выбирает то, что ему предпочтительнее</p>
+			</section>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<i class="fa fa-money fa-8x" aria-hidden="true"></i>
+		</div>
+	</div>
+	
+	<div class="row special-row">
+		<div class="col-xs-6 col-md-4">
+			<i class="fa fa-wrench fa-8x"></i>
+		</div>
+		<div class="col-xs-12 col-md-8">
+			<section>
+				<header>
+					<h3>Полный технический контроль</h3>
+				</header>
+				<p>Благодаря наличию собственного автопарка, мы можем гарантировать исправность каждого представленного транспортного средства. Благодаря этому прокат машин действительно выгоден — можно забронировать понравившееся авто на нужный срок, не сомневаясь в его отличном техническом состоянии. Наши клиенты наслаждаются безупречной ездой, а все остальное — наши хлопоты</p>
+			</section>
+		</div>
+	</div>
 
-					<!-- One -->
-						<section class="wrapper style2 container special-alt">
-							<div class="row 50%">
-								<div class="8u 12u(narrower)">
+	<div class="row special-row">
+		<div class="col-xs-12 col-md-8">
+			<section>
+				<header>
+					<h3>Помощь в выборе</h3>
+				</header>
+				<p>Наши консультанты тщательно подбирают каждый автомобиль, в зависимости от выдвинутых клиентом критериев. Организуем кортеж из элитных моделей бизнес-класса или же поможем выбрать быстрое и маневренное авто. Машина напрокат — это удобно, мы готовы предложить лучшие условия</p>
+			</section>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<i class="fa fa-info-circle fa-8x"></i>
+		</div>
+	</div>
 
-									<header>
-										<h2>Иновационный <strong>подход</strong> - это про нас. Лучший функционал из возможных сервисов.</h2>
-									</header>
-									<p>Доступ с любого устройства. Быстрый заказ одним кликом. Круглосуточная поддержка.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Узнать больше</a></li>
-										</ul>
-									</footer>
+	<footer class="major">
+		<ul class="buttons">
+			<li><a href="#" class="button"><div class="text">Узнать больше</div></a></li>
+		</ul>
+	</footer>
+</section>
 
-								</div>
-								<div class="4u 12u(narrower) important(narrower)">
+<div class="pop-up"> 
+	<span>Закажите звонок</span>
 
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-										
-										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
+	<p><input type="text" name="phone" class="phone-mask" placeholder="+37544" /></p>
+	<p><input type="submit"  value="Отправить" style="margin: 0 auto; display: block;" /></p>
+	
+	<div class="close-pop-up">&times;</div>
+</div>
 
-								</div>
-							</div>
-						</section>
+<div class="pop-up-container"></div>
 
-					<!-- Two -->
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Лидерство</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Успех</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<span class="icon featured fa-check"></span>
-										<header>
-											<h3>Удобство</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Three -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
-							</header>
-
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>A Really Fast Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>An Airport Terminal</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-							</div>
-							<div class="row">
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Hyperspace Travel</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-								<div class="6u 12u(narrower)">
-
-									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>And Another Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-
-								</div>
-							</div>
-
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
-								</ul>
-							</footer>
-
-						</section>
-
-				</article>
-
-			<!-- CTA -->
-				<section id="cta">
-
-					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-					</header>
-					<footer>
-						<ul class="buttons">
-							<li><a href="#" class="button special">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
-						</ul>
-					</footer>
-
-				</section>
-				
 @endsection

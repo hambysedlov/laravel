@@ -7,11 +7,7 @@ use App\Catalogs;
 
 class BaseController extends Controller
 {
-	
-    public function getIndex(){
-		
+    public function getIndex() {
 		return view('index');
-		
-		
 	}
 }
