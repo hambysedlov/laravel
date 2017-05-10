@@ -107,7 +107,7 @@
 
 		<!-- Scripts -->
 			
-			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/jquery.dropotron.js"></script>
 			<script src="js/jquery.scrolly.min.js"></script>
 			<script src="js/jquery.scrollgress.min.js"></script>
 			<script src="js/skel.min.js"></script>

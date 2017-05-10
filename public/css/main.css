@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("font-Lato.css");
 
 /*
 	Twenty by HTML5 UP
@@ -2043,6 +2043,11 @@
     display: block;           
 }
 
+.pop-up input[type="submit"] {
+	margin: 0 auto; 
+	display: block;	
+}
+
 .close-pop-up {
     position: absolute;
     right: 0px;
@@ -3396,3 +3401,16 @@
 			}
 
 	}
+
+	/*---Auth---*/
+
+	.panel-body {
+		padding-top: 120px;
+		margin-bottom: 50px;
+	} 
+
+	#banner-bottom #footer {
+		margin-top: 105px;
+	}
+
+

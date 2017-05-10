@@ -7,21 +7,31 @@
 		<ul>
 		
 			@section('menu')
-			<li class="submenu">
+			<li class="submenu dropdown">
 			
-				<a href="#">ВАШ ВЫБОР</a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ВАШ ВЫБОР</a>
 				
-				<ul>
-				<form class="" method="post" action="subscribe">
-				{!!csrf_field()!!}
-				@foreach($catalogs as $one)<li>
-					<input name="{{$one->id}}" value="{{$one->id}}" type="checkbox"><a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a></li>
-					@endforeach
-			<input type="submit" name="send" value="Подписаться">
-			</form>	</ul>
-				
-				
-				
+				<ul class="dropdown-menu" role="menu">
+					<form>
+					@if (Auth::guest())
+						@foreach($catalogs as $one)
+							<a href="{{asset('catalog/'.$one->id)}}" style="display: block;">{{$one->name}}</a>
+						@endforeach
+					</form>
+
+					@else
+						<form method="post" action="subscribe">
+							{!!csrf_field()!!}
+								@foreach($catalogs as $one)
+									<li>
+										<input type="checkbox" name="{{$one->id}}" value="{{$one->id}}">
+										<a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a>
+									</li>
+								@endforeach
+							<input type="submit" name="send" value="Подписаться">
+						</form>	
+					@endif
+				</ul>
 			</li>
 		
 			@show
@@ -39,12 +49,7 @@
                 <ul class="dropdown-menu" role="menu">
                     
 					<li>
-                        <a href="{{ url('/home') }}"
-                          >
-                            Home
-                        </a>
-
-                    
+                        <a href="{{ url('/home') }}">Home</a>
                     </li>
 					<li>
                         <a href="{{ url('/logout') }}"

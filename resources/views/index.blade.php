@@ -110,7 +110,7 @@
 	<span>Закажите звонок</span>
 
 	<p><input type="text" name="phone" class="phone-mask" placeholder="+37544" /></p>
-	<p><input type="submit"  value="Отправить" style="margin: 0 auto; display: block;" /></p>
+	<p><input type="submit" value="Отправить" /></p>
 	
 	<div class="close-pop-up">&times;</div>
 </div>
