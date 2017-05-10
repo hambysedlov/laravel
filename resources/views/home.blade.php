@@ -1,19 +1,14 @@
 @extends('layouts.base')
+@section('menu')
+@parent
+
+@stop
 @section('content')
-<section id="banner">
-<div class="row">
-<div class="col-md-12">
-<div class="panel panel-default">
-<div class="panel-heading">Кабинет пользователя</div>
-<div class="panel-body maintext">
-Your logged in!
-<div>
 
-</div>
-<div>
-<div>
+<section id="banner" class="alt catalog reveal"></section>
 
 
+<section id="catalog" class="wrapper style3 container special"></section>
 
-</div>
+
 @endsection

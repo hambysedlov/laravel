@@ -56,7 +56,7 @@
 
 		<!-- Scripts -->
 			
-		<script src="{{asset('js/jquery.dropotron.min.js')}}"></script>
+		<script src="{{asset('js/jquery.dropotron.js')}}"></script>
 		<script src="{{asset('js/jquery.scrolly.min.js')}}"></script>
 		<script src="{{asset('js/jquery.scrollgress.min.js')}}"></script>
 		<script src="{{asset('js/skel.min.js')}}"></script>
