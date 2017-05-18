@@ -3413,4 +3413,35 @@
 		margin-top: 105px;
 	}
 
+	/*---Homepage---*/
+
+	#homepage h3 {
+		text-align: center;
+		padding-bottom: 2em;
+	}
+
+	.wrapper#homepage {
+		padding: 5em;
+	}
+
+	.nav-tabs#homepage a {
+		border: 1px dotted #ddd;
+	}
+
+	#homepage tr td {
+		text-align: left;
+		padding-left: 1em;
+		border-top: 0px solid #ddd;
+	}
+
+	/*---Header---*/
+
+	.dropdown-menu#nav a {
+		text-decoration: none;
+		display: block
+	}
+
+	.dropdown-menu#nav form {
+		margin: 3em;
+	}
 

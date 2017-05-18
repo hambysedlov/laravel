@@ -25,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $cats = Categorie::where('showhidle', 'show')->get();
-        return view('home')->with('cats', $cats);
+        return view('home')->with('cats', $cats)->with('extra_header_class', 'catalog');
     }
 }

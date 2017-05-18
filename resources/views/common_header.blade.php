@@ -15,7 +15,7 @@
 					<form>
 					@if (Auth::guest())
 						@foreach($catalogs as $one)
-							<a href="{{asset('catalog/'.$one->id)}}" style="display: block;">{{$one->name}}</a>
+							<a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a>
 						@endforeach
 					</form>
 
