@@ -12,7 +12,7 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ВАШ ВЫБОР</a>
 				
 				<ul class="dropdown-menu" role="menu">
-					<form>
+					<form method="post" action="subscribe">
 					@if (Auth::guest())
 						@foreach($catalogs as $one)
 							<a href="{{asset('catalog/'.$one->id)}}">{{$one->name}}</a>

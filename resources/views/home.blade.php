@@ -47,7 +47,13 @@
 			<table class="table table-striped">
 				<tbody>
 				  <tr>
-				    <td>Вы подписаны на: </td>
+				    <td>Вы подписаны на:
+					@if($subscribes != null)
+					@foreach($subscribes as $one)
+					{{$one->name}}<br>
+					@endforeach
+					@endif
+					</td>
 				    <td></td>
 				  </tr>
 				</tbody>
